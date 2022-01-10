@@ -12,8 +12,8 @@
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/title_text_first"
             android:id="@+id/tvTitleFirstPart"
+            style="@style/title_text_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -27,8 +27,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            style="@style/title_text_second"
             android:id="@+id/tvTitleSecondPart"
+            style="@style/title_text_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:shadowColor="@color/shadow_color"
@@ -69,6 +69,17 @@
             app:layout_constraintStart_toStartOf="@id/tvTitleSecondPart"
             app:layout_constraintTop_toBottomOf="@id/tvTitleSecondPart" />
 
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="PHONE NUMBER:"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/tvSecondTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecondTitle" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clFirstDish"
             android:layout_width="match_parent"
@@ -102,8 +113,8 @@
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/tvFirstDishCount"
-                app:layout_constraintStart_toEndOf="@id/ivFirstDishPhoto"
                 app:layout_constraintEnd_toEndOf="@+id/tvFistDishPrice"
+                app:layout_constraintStart_toEndOf="@id/ivFirstDishPhoto"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="spread" />
 
@@ -181,9 +192,9 @@
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/tvSecondDishCount"
+                app:layout_constraintEnd_toEndOf="@+id/tvSecondDishPrice"
                 app:layout_constraintStart_toEndOf="@id/ivSecondDishPhoto"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/tvSecondDishPrice"
                 app:layout_constraintVertical_chainStyle="spread" />
 
             <TextView
@@ -258,8 +269,8 @@
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/tvThirdDishCount"
-                app:layout_constraintStart_toEndOf="@id/ivThirdDishPhoto"
                 app:layout_constraintEnd_toEndOf="@+id/tvThirdDishPrice"
+                app:layout_constraintStart_toEndOf="@id/ivThirdDishPhoto"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="spread" />
 
@@ -402,14 +413,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="49dp"
             android:layout_marginBottom="23dp"
+            android:background="@color/button_color"
             android:paddingLeft="70dp"
             android:paddingTop="16dp"
             android:paddingRight="70dp"
             android:paddingBottom="16dp"
             android:text="@string/order_complete"
-            android:textSize="14sp"
             android:textColor="@color/black"
-            android:background="@color/button_color"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
