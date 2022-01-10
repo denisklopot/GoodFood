@@ -11,8 +11,7 @@ class OrdersListActivity : AppCompatActivity() {
         private const val PHONE_NUMBER_KEY = "PhoneNumber"
 
         fun newInstance(activity: LoginScreenActivity, phoneNumber: String) {
-            val inten
-            t = Intent(activity, OrdersListActivity::class.java).apply {
+            val intent = Intent(activity, OrdersListActivity::class.java).apply {
                 putExtra(PHONE_NUMBER_KEY, phoneNumber)
             }
             activity.startActivity(intent)
