@@ -5,9 +5,18 @@
       <map>
         <entry key="app/src/main/res/drawable/decoration_background_filled_rounded_8.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/decoration_button_shadowed.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/decoration_rounded_4.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/decoration_rounded_green_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/decoration_rounded_shadowed_16.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/drawable_first_dish_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_close_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/shape_circle.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_orders_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/login_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/drawable_first_dish.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/drawable_first_dish_round.xml" value="0.1" />
       </map>
     </option>
   </component>
