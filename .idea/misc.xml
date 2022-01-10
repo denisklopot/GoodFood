@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/decoration_background_filled_rounded_8.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/decoration_button_shadowed.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/decoration_rounded_green_border.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/login_screen.xml" value="0.1" />
       </map>
