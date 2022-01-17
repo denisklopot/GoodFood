@@ -25,7 +25,6 @@ class OrdersScreenFragment : Fragment() {
     }
 
     var phoneNumber: String? = null
-    private lateinit var binding: FragmentOrdersScreenBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,8 +36,12 @@ class OrdersScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        phoneNumber = arguments?.getString(PHONE_NUMBER_KEY)
+        getPhoneNumberFromArguments()
         val tvPhoneNumber = view.findViewById<TextView>(R.id.tvPhoneNumber)
         tvPhoneNumber.text = "Phone number: $phoneNumber"
+    }
+
+    private fun getPhoneNumberFromArguments() {
+        phoneNumber = arguments?.getString(PHONE_NUMBER_KEY)
     }
 }
