@@ -2,6 +2,9 @@ package com.example.goodfood
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class MainActivity : AppCompatActivity(), MainNavigation {
 
@@ -23,5 +26,9 @@ class MainActivity : AppCompatActivity(), MainNavigation {
             .beginTransaction()
             .add(R.id.flRoot, LoginScreenFragment())
             .commit()
+    }
+
+    override fun openDishDetailFragment() {
+        DishDetailFragment().show(supportFragmentManager, "DishDetailFragment")
     }
 }

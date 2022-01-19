@@ -11,4 +11,5 @@
     <color name="tint_color">#A1A1A1</color>
     <color name="hint_color">#FAFAFA</color>
     <color name="button_color">#27E8AB</color>
+    <color name="grey">#808080</color>
 </resources>

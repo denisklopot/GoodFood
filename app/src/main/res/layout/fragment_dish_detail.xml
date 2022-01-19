@@ -1,6 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFoodItemInfoParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFirstPhoto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/drawable_detail_first_dish_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/drawable_icon_like"
+            app:layout_constraintEnd_toEndOf="@id/ivFirstPhoto"
+            app:layout_constraintTop_toTopOf="@id/ivFirstPhoto" />
+
+        <TextView
+            android:id="@+id/tvDishTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/dish_title"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="@id/clFoodItemInfoParent"
+            app:layout_constraintTop_toBottomOf="@id/ivFirstPhoto" />
+
+        <TextView
+            android:id="@+id/tvDishParameters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="1 шт / 300 г            312ккал"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/clFoodItemInfoParent"
+            app:layout_constraintTop_toBottomOf="@id/tvDishTitle" />
+
+        <TextView
+            android:id="@+id/tvDishDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/dish_description"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/clFoodItemInfoParent"
+            app:layout_constraintTop_toBottomOf="@id/tvDishParameters" />
+
+        <LinearLayout
+            android:id="@+id/llDishCountBlock"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            android:background="@drawable/decoration_rectangle_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnDishPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDishDescription">
+
+            <ImageView
+                android:id="@+id/ivDishRemove"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/drawable_dish_remove" />
+
+            <TextView
+                android:id="@+id/tvDishCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ivDishAdd"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/drawable_dish_add" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDishPrice"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/button_color"
+            android:text="235 ₽"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDishDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
