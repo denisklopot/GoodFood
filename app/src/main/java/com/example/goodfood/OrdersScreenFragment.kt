@@ -43,8 +43,16 @@ class OrdersScreenFragment : Fragment() {
         val tvPhoneNumber = view.findViewById<TextView>(R.id.tvPhoneNumber)
         tvPhoneNumber.text = "Phone number: $phoneNumber"
         val clFirstDish = view.findViewById<ConstraintLayout>(R.id.clFirstDish)
+        val clSecondDish = view.findViewById<ConstraintLayout>(R.id.clSecondDish)
+        val clThirdDish = view.findViewById<ConstraintLayout>(R.id.clThirdDish)
         clFirstDish.setOnClickListener {
-
+            (activity as MainNavigation).openDishDetailFragment()
+        }
+        clSecondDish.setOnClickListener {
+            (activity as MainNavigation).openDishDetailFragment()
+        }
+        clThirdDish.setOnClickListener {
+            (activity as MainNavigation).openDishDetailFragment()
         }
     }
 
